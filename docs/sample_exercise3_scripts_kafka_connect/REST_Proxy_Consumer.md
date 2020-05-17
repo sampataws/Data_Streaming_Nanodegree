@@ -1,0 +1,10 @@
+###REST Proxy Consumer
+* ```POST``` [to](https://docs.confluent.io/current/kafka-rest/api.html#post--consumers-(string-group_name)) ```/consumers/<group_name>``` [to create a consumer group](https://docs.confluent.io/current/kafka-rest/api.html#post--consumers-(string-group_name))
+* ```POST``` [to](https://docs.confluent.io/current/kafka-rest/api.html#post--consumers-(string-group_name)) ```/consumers/<group_name>/instances/<instance_id>/subscriptions``` [to create a subscription](https://docs.confluent.io/current/kafka-rest/api.html#post--consumers-(string-group_name)) -instances-(string-instance)-subscription)
+* ```GET``` [from](https://docs.confluent.io/current/kafka-rest/api.html#get--consumers-(string-group_name)) ```/consumers/<group_name>/instances/<instance_id>/records``` [to retrieve records](https://docs.confluent.io/current/kafka-rest/api.html#get--consumers-(string-group_name)) -instances-(string-instance)-records)
+  * [Always check your Accept header to ensure that it is correctly configured](https://docs.confluent.io/current/kafka-rest/api.html#content-types)
+    * Content-Type is in the format ```application/vnd.kafka[.embedded_format].[api_version]+[serialization_format]```
+    * ```embedded_format``` is how the data requested from Kafka is formatted. Must be one of ```binary```, ```json```, or ```avro```
+    * ```api_version``` is the API version for REST Proxy -- this should always be ```v2``` as of writing
+    * ```serialization_format``` has nothing to do with your Kafka data, this is how the actual data being received from REST proxy is serialized. Only ```json``` is supported for now -- so always set this to ```json```!
+* ```DELETE``` to ```/consumers/<group_name>/instances/<instance_id>/subscriptions``` [to unsubscribe a coinsumer](https://docs.confluent.io/current/kafka-rest/api.html#delete--consumers-(string-group_name)) -instances-(string-instance)-subscription)

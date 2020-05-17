@@ -1,0 +1,5 @@
+## Glossary of Key Terms You Will Learn in this Lesson
+* ```Kafka Streams``` - A Java library for constructing stream processing applications. KSQL translates SQL statements to Kafka Streams applications.
+* ```User Defined Function (UDF)``` - An extension to the SQL capabilities of KSQL written by the user. For KSQL, these are written in Java.
+* ```Key (KSQL)``` - Data which uniquely identifies the value contained in this data message relative to other pieces of data in the stream. For example, a user_id may uniquely identify a user object.
+* ```Session Windowing (KSQL)``` - A system that keeps track of when the last time a particular key was seen. When a new record with the same key arrives, the difference between the timestamps is calculated. If the difference is larger than a defined session window, then a new window is started for that session. If the difference is less than the defined session window, the new record is added to the existing window.

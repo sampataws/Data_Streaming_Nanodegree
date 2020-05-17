@@ -1,0 +1,2 @@
+###Recap on Structured Streaming and State Management
+Structured Streaming is a new streaming strategy developed from Discretized Stream. It added a few updates from Dstream, such as decoupling saving state to store to decouple the state management, and also checkpointing metadata. Because these two limitations are decoupled from the application, the developer is now able to exercise fault-tolerant end-to-end execution with ease.

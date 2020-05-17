@@ -1,0 +1,6 @@
+##Faust Operations - Key Points
+* [Faust Operations are actions that can be applied to an incoming stream to create an intermediate stream containing some modification, such as a group by or filter](https://faust.readthedocs.io/en/latest/userguide/streams.html#operations)
+* The ```group_by``` operation ingests every incoming event from a source topic, and emits it to an intermediate topic with the newly specified key
+* The ```filter``` operation uses a boolean function to determine whether or not a particular record should be kept or discarded. Any records that are kept are written to a new intermediate stream.
+  * The ```take``` operation bundles groups of events before invoking another iteration of the stream. Be careful to specify the ```within``` ```datetime.timedelta``` argument to this function, otherwise your program may hang.
+* Faust provides a number of other operations that you may use when working with your streams. [Have a look at the documentation for further information.](https://faust.readthedocs.io/en/latest/userguide/streams.html#operations)

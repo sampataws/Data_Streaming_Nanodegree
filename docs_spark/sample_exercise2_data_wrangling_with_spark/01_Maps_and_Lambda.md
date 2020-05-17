@@ -1,0 +1,3 @@
+For more about the theory and origins of lambda functions, take a look at this [blog post](http://palmstroem.blogspot.com/2012/05/lambda-calculus-for-absolute-dummies.html). Why are lambda functions called "lambda" functions?
+
+According to legend, the inventor of Lambda Calculus, Alonzo Church, originally used the wedge symbol \wedge∧ as part of his notation. But the typsetter transcribing his manuscript used \lambdaλ instead. You can read more about it in the blog post.

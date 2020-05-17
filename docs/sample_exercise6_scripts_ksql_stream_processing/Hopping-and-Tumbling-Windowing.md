@@ -1,0 +1,3 @@
+###Hopping and Tumbling Windowing
+* [KSQL supports Tumbling windows with the](https://docs.confluent.io/current/ksql/docs/developer-guide/aggregate-streaming-data.html#aggregate-records-over-a-tumbling-window)``` WINDOW TUMBLING (SIZE <duration>)``` [syntax](https://docs.confluent.io/current/ksql/docs/developer-guide/aggregate-streaming-data.html#aggregate-records-over-a-tumbling-window)
+* [KSQL supports Hopping windows with the](https://docs.confluent.io/current/ksql/docs/developer-guide/aggregate-streaming-data.html#aggregate-records-over-a-hopping-window) ```WINDOW HOPPING (SIZE <duration>, ADVANCE BY <interval>)``` syntax

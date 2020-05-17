@@ -1,0 +1,6 @@
+###KSQL JOINs
+* [KSQL supports Stream to Stream, Stream to Table, and Table to Table](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-event-streams-with-ksql) ```JOINs```
+* [Limitations on the kind of](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-capabilities) ```JOINs``` [supported exist for each of the types of](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-capabilities) ```JOINs```
+* [Stream to Stream](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#joins-and-windows) ```JOINs``` [may be windowed](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#joins-and-windows)
+* ```JOIN```[ed entities must be co-partitioned](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-requirements)
+* ```JOIN```[ed data must share the same](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-requirements) ```KEY``` [in KSQL as used for the Kafka record](https://docs.confluent.io/current/ksql/docs/developer-guide/join-streams-and-tables.html#join-requirements)
