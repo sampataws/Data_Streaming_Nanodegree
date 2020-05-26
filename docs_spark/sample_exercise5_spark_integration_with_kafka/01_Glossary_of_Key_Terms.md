@@ -1,0 +1,4 @@
+###Glossary of Key Terms You Will Learn in this Lesson
+* ```Write Ahead Logs (WAL)```: This is where the operation is logged in a file format. When unfortunate events like driver or node failure happen and the application is restarted, the operation logged in the WAL can be applied to the data.
+* ```Broadcasting```: Spark allows users to keep a read-only variable cached on each machine rather than sending the data over the network with tasks. This is useful when you have a rather large dataset and don't want to send the dataset over the network.
+* ```Salting```: Another popular method of redistributing a dataset. This is done by adding a "fake-primary-key" to redistribute the data.
