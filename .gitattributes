@@ -1,1 +1,9 @@
 *.json filter=lfs diff=lfs merge=lfs -text
+*.json
+git[[:space:]]status
+git
+git[[:space:]]add[[:space:]]docs_spark/project/SF_Crime_Statistics/resources/sf-crime-data-project-files/police-department-calls-for-service.json
+git[[:space:]]commit[[:space:]]-m[[:space:]]large filter=lfs diff=lfs merge=lfs -text
+file
+git[[:space:]]push[[:space:]]origin[[:space:]]master
+ filter=lfs diff=lfs merge=lfs -text
